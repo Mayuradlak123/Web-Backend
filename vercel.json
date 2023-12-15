@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "path/to/your/source",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "path/to/your/api/$1",
+        "headers": { "Access-Control-Allow-Origin": "*" }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "path/to/your/source/$1"
+      }
+    ],
+    "env": {
+      "YOUR_ENV_VARIABLE": "example-value"
+    }
+  }
+  
