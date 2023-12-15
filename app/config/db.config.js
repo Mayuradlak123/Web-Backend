@@ -1,11 +1,13 @@
 // db.js
 const mongoose = require('mongoose');
 const dotenv=require("dotenv").config()
-const uri = process.env.DATABASE_URL // replace with your actual MongoDB Atlas connection string
+const DATABSE_URL="mongodb+srv://Mayur:Mayur@cluster0.pofppjq.mongodb.net/?retryWrites=true&w=majority"
 
 async function connectToDatabase() {
+ 
   try {
-    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+    await mongoose.connect(DATABSE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
     console.log('Connected to the MongoDB Atlas database');
     return mongoose.connection; // return the Mongoose connection
   } catch (error) {
