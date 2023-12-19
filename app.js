@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const serviceRoutes = require("./api/routes/contacts.routes")
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use(bodyParser.json());
 app.use("/services", serviceRoutes);
