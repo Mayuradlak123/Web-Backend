@@ -13,7 +13,5 @@ app.use("/services", serviceRoutes);
 app.get("/", function(req, res) {
   res.json({message:"App Launched successfully"})
 })
-app.listen(port, () => {
-  db()
-  console.log(`Server is running on port ${port}`);
-});
+db()
+app.listen(port);
