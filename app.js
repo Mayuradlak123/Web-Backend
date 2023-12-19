@@ -1,8 +1,8 @@
 // index.js
-const db=require("./app/config/db.config")
+const db=require("./api/config/db.config")
 const express = require('express');
 const bodyParser = require('body-parser');
-const serviceRoutes = require("./app/routes/contacts.routes")
+const serviceRoutes = require("./api/routes/contacts.routes")
 
 const app = express();
 const port = 3000;
