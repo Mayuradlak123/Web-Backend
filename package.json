@@ -6,12 +6,14 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel-build":"echo Hello"
+    "vercel-build": "echo Hello"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3",
     "vercel": "^33.0.0"
   }
 }
