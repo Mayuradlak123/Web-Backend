@@ -14,4 +14,5 @@ app.get("/", function(req, res) {
   res.json({message:"App Launched successfully"})
 })
 db()
-app.listen(port);
+// app.listen(port);
+export default app;
