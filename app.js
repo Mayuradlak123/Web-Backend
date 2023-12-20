@@ -4,7 +4,7 @@ const express = require('express');
 const dotenv=require("dotenv").config()
 const bodyParser = require('body-parser');
 const serviceRoutes = require("./api/routes/contacts.routes")
-
+const cors= require("cors")
 const app = express();
 const port = process.env.PORT||8000;
 
