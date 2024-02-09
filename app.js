@@ -3,16 +3,16 @@ const db=require("./api/config/db.config")
 const express = require('express');
 const dotenv=require("dotenv").config()
 const bodyParser = require('body-parser');
-const serviceRoutes = require("./api/routes/contacts.routes")
+const studentRoutes = require("./api/routes/student.routes.js")
 const cors= require("cors")
 const app = express();
 const port = process.env.PORT||8000;
 
 app.use(bodyParser.json());
-app.use("/services", serviceRoutes);
+app.use("/api/v1", studentRoutes);
 
 app.get("/", function(req, res) {
-  res.json({message:"App Launched successfully"})
+  res.json({message:"App Launched successfully Version 02"})
 })
 var whitelist = ['https://webcraze.tech',"http://127.0.0.1:5173", "http://localhost:3306","https://opulix-gufyfk9q1-mayuradlak123.vercel.app"]
 app.use(
