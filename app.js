@@ -14,7 +14,7 @@ app.use("/services", serviceRoutes);
 app.get("/", function(req, res) {
   res.json({message:"App Launched successfully"})
 })
-var whitelist = ['http://localhost:5173',"http://127.0.0.1:5173", "http://localhost:3306","https://opulix-gufyfk9q1-mayuradlak123.vercel.app"]
+var whitelist = ['https://webcraze.tech',"http://127.0.0.1:5173", "http://localhost:3306","https://opulix-gufyfk9q1-mayuradlak123.vercel.app"]
 app.use(
     cors({
         origin: (origin, callback) => {
