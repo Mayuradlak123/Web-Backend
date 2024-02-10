@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use("/api/v1", studentRoutes);
 
 app.get("/", function(req, res) {
-  res.json({message:"App Launched successfully Version 04"})
+  res.json({message:"App Launched successfully Version 05"})
 })
 app.use(cors());
 
