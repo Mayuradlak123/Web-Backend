@@ -1,5 +1,5 @@
 // index.js
-const db=require("./api/config/db.config")
+const db=require("./api/config/database.js")
 const express = require('express');
 const dotenv=require("dotenv").config()
 const bodyParser = require('body-parser');
@@ -29,7 +29,7 @@ app.use(
         },
     })
 );
-db()
+
 app.listen(port);
 module.exports= app;
 // https://opulix-gufyfk9q1-mayuradlak123.vercel.app/
