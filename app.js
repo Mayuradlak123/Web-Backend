@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use("/api/v1", studentRoutes);
 
 app.get("/", function(req, res) {
-  res.json({message:"App Launched successfully Version 05"})
+  res.json({message:"App Launched successfully Version 06"})
 })
 app.use(cors({origin:"http://127.0.0.1:57291"}));
 
