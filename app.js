@@ -14,7 +14,8 @@ app.use("/api/v1", studentRoutes);
 app.get("/", function(req, res) {
   res.json({message:"App Launched successfully Version 06"})
 })
-app.use(cors({origin:"http://127.0.0.1:57291"}));
+app.use(express.json())
+app.use(cors({ origin: "*" }));
 
 app.listen(port);
 module.exports= app;
