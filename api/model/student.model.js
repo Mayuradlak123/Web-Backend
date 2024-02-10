@@ -1,7 +1,7 @@
 // studentModel.js
 
 const mongoose = require('mongoose');
-const { getCurrentDateTime } = require('../utils/util');
+const { getCurrentDateTime } = require('../utils/util.js');
 
 // Define the schema for the student
 const studentSchema = new mongoose.Schema({
