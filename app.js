@@ -17,7 +17,9 @@ app.get("/", function(req, res) {
 app.use(express.json())
 app.use(cors({ origin: "*" }));
 
-app.listen(port);
+app.listen(port,()=>{
+  console.log({message:"EC2 Server Setup Successfully ",status:true});
+});
 module.exports= app;
 // https://opulix-gufyfk9q1-mayuradlak123.vercel.app/
 // https://newsapplication-backend.onrender.com/
