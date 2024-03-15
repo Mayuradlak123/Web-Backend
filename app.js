@@ -4,7 +4,7 @@ const express = require('express');
 const dotenv=require("dotenv").config()
 
 const studentRoutes = require("./api/routes/student.routes.js")
-const cors= require("cors")
+
 const app = express();
 const port = process.env.PORT||8000;
 
@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
   res.json({message:"App Launched successfully Version 08"})
 })
 app.use(express.json())
-app.use(cors({ origin: "*" }));
+
 
 app.listen(port,()=>{
   console.log({message:"EC2 Server Setup Successfully ",status:true});
