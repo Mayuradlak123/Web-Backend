@@ -2,13 +2,13 @@
 const db=require("./api/config/database.js")
 const express = require('express');
 const dotenv=require("dotenv").config()
-const bodyParser = require('body-parser');
+
 const studentRoutes = require("./api/routes/student.routes.js")
 const cors= require("cors")
 const app = express();
 const port = process.env.PORT||8000;
 
-app.use(bodyParser.json());
+
 app.use("/api/v1", studentRoutes);
 
 app.get("/", function(req, res) {
