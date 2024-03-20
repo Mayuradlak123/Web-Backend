@@ -9,6 +9,7 @@ const youtubeRoutes = require("./api/routes/youtube.routes.js")
 const cors= require("cors")
 
 const app = express();
+app.use(express.json())
 const port = process.env.PORT||8000;
 
 
