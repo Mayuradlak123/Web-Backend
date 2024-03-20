@@ -5,6 +5,7 @@ const ytdl = require('ytdl-core');
 const getVideoUrlController = async (request, response) => {
   try {
     // YouTube link - extract from request or pass as a parameter
+    console.log(request.body)
     const youtubeLink = request.body.youtubeLink; // Assuming the link is in the request body
 
     // Get video info

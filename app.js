@@ -2,7 +2,7 @@
 const db=require("./api/config/database.js")
 const express = require('express');
 const dotenv=require("dotenv").config()
-
+const bodyParser = require("body-parser")
 const studentRoutes = require("./api/routes/student.routes.js")
 
 const youtubeRoutes = require("./api/routes/youtube.routes.js")
