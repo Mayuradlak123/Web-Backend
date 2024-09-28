@@ -17,7 +17,7 @@ app.use("/api/v1", studentRoutes);
 app.use("/api/v1", youtubeRoutes);
 
 app.get("/", function(req, res) {
-  res.json({message:"App Launched successfully Version 10"})
+  res.json({message:"App Launched successfully Version 15"})
 })
 app.use(express.json())
 
