@@ -19,7 +19,7 @@ const getVideoUrlController = async (request, response) => {
     response.status(200).json({ directUrl });
   } catch (error) {
     console.error('Error extracting video URL:', error);
-    response.status(500).json({ error: 'Internal server error' });
+    response.status(500).json({ error });
   }
 };
 module.exports = { getVideoUrlController };
